@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM and BOM</title>
+        <style>
+            body {
+                background-color: #1a1a1a;
+                color: #fff;
+                text-align: center;
+            }
+            .highlight {
+                background-color: yellow;
+                color: #1a1a1a;
+                font-weight: bold;
+            }
+            .hidden {
+                display: none;
+            }
+            ul {
+                list-style-type: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Put your heads down and do the fucking job.</h1>
+        <!-- 1. accessing the dom element -->
+        <section id="example-1">
+            <h2>Aceessing DOM element</h2>
+            <p id="myParagraph">I'm a paragraph, click the buttom to change me!</p>
+            <button id="changeTextButton">Change text</button>
+        </section>
+        <!-- Traversing the dom -->
+        <section id="example-2">
+            <h2>Traversing the DOM</h2>
+            <ul id="citiesList">
+                <li>new york</li>
+                <li>tokoyo</li>
+                <li>paris</li>
+                <li>london</li>
+            </ul>
+            <button id="highlightFirstCity">Highlight first city</button>
+        </section>
+
+        <section id="example-3">
+            <h2>Manipulating DOM Elements</h2>
+            <div id="coffeOrder">Order: <span id="coffeeType">Latte</span></div>
+            <button id="changeOrder">Change order to Espresso</button>
+        </section>
+        <!-- creating and Inserting Elements -->
+        <section id="example-4">
+            <h2>Creating and Inserting Elements</h2>
+            <button id="addNewItem">Add a New Item to the Shopping List</button>
+            <ul id="shoppingList">
+                <li>Bread</li>
+                <li>Milk</li>
+            </ul>
+        </section>
+
+        <!-- Removing DOM Elements -->
+        <section id="example-5">
+            <h2>Removing DOM Elements</h2>
+            <ul id="taskList">
+                <li>task 1</li>
+                <li>task 2</li>
+                <li>task 3</li>
+            </ul>
+            <button id="removeLastTask">Remove last task</button>
+        </section>
+
+        <script defer src="./dom-task.js"></script>
+    </body>
+</html>
