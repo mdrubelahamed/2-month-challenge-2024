@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>DOM and BOM</title>
+        <title>DOM & BOM</title>
         <style>
             body {
                 background-color: #1a1a1a;
@@ -18,8 +18,9 @@
             .hidden {
                 display: none;
             }
-            ul {
-                list-style-type: none;
+            .teaItem {
+                padding: 2px;
+                margin: 2px;
             }
         </style>
     </head>
@@ -69,6 +70,43 @@
             <button id="removeLastTask">Remove last task</button>
         </section>
 
+        <!-- event handling -->
+        <section id="example-6">
+            <h2>Event handling in the DOM</h2>
+            <button id="clickMeButton">Click me!</button>
+        </section>
+
+        <section id="example-7">
+            <h2>Event Delegation</h2>
+            <ul id="teaList">
+                <li class="teaItem">black tea</li>
+                <li class="teaItem">oolung tea</li>
+                <li class="teaItem">green tea</li>
+            </ul>
+        </section>
+
+        <!-- form handling -->
+        <section id="example-8">
+            <h2>Form handling</h2>
+            <form action="" id="feedbackForm">
+                <label for="feedbackInput">Your Feedback is:</label>
+                <input type="text" id="feedbackInput" placeholder="enter feedback" />
+                <button type="submit">submit feedback</button>
+            </form>
+            <p id="feedbackDisplay"></p>
+        </section>
+
+        <!-- dom content loaded -->
+        <section id="example-9">
+            <h2>DOM Content Loaded</h2>
+            <p id="domStatus">Waiting for DOM to load...</p>
+        </section>
+
+        <section id="example-10">
+            <h2>CSS Classes Manipulation</h2>
+            <p id="colorChnagingText">This text will change color</p>
+            <button id="toggleHighlight">Toggle Highlight</button>
+        </section>
         <script defer src="./dom-task.js"></script>
     </body>
 </html>
